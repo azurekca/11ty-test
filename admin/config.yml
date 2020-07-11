@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+site_url: https://condescending-feynman-61da7f.netlify.app/
 
 # This line should *not* be indented
 media_folder: "blog/images" # Media files will be stored in the repo under blog/images
