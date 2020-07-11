@@ -1,3 +1,3 @@
 module.exports = {
-  templateFormats: ["html", "liquid", "pug", "jpg"]
+  templateFormats: ["html", "liquid", "yml", "pug", "jpg"]
 };
