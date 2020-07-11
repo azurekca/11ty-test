@@ -6,6 +6,6 @@ module.exports = async () => {
 
   // returns an array of characters
   const characters = result.data.results;
-  console.log(characters);
+  // console.log(characters);
   return characters;
 }
