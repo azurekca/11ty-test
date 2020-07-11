@@ -1,0 +1,27 @@
+---
+title: Welcome to the Blog
+layout: layout.liquid
+pagination:
+  data: collections.blog
+  size: 2 
+  alias: blogs
+---
+
+<ul>
+{% for blog in blogs %}
+  <li>
+    <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+{% comment %}
+    The below pagination links are for the list of blog posts displayed on the main page. It is not for navigating between posts/pages
+{% endcomment %}
+
+{% if pagination.href.previous %}
+<a href="{{pagination.href.previous}}">Previous Page</a>
+{% endif %}
+{% if pagination.href.next %}
+<a href="{{pagination.href.next}}">Next Page</a>
+{% endif %}

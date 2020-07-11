@@ -1,0 +1,15 @@
+{
+  "name": "11ty",
+  "version": "1.0.0",
+  "description": "testing 11ty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "agata zurek",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "axios": "^0.19.2"
+  }
+}
