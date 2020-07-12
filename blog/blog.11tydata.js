@@ -7,7 +7,7 @@ const puppers = require('../_data/dog');
 module.exports = async () => {
   const image = await puppers();
   return { 
-    layout: "layout.liquid",
+    layout: "blog.liquid",
     tags: "blog",
     puppers: image
   };
