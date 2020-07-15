@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = (eleventyConfig) => {
   // copy static assets to output folder
   eleventyConfig.addPassthroughCopy('jpg');
 
