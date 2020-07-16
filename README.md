@@ -1,6 +1,7 @@
-# page header
+# Bare Bones Test Site
+## Testing out 11ty and Netlify CMS
 
-this is a test of 11ty while following along with 
+ followed along with 
 https://www.youtube.com/watch?v=j8mJrhhdHWc
 
 and
