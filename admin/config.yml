@@ -7,7 +7,7 @@ local_backend: true
 site_url: https://condescending-feynman-61da7f.netlify.app/
 
 # This line should *not* be indented
-media_folder: "public/images" # Media files will be stored in the repo under blog/images
+media_folder: "static/images" # Media files will be stored in the public folder
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI - as in, this is the label the cms editor will see
