@@ -4,7 +4,7 @@
   "description": "testing 11ty",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve"
   },
   "author": "agata zurek",
   "license": "ISC",
