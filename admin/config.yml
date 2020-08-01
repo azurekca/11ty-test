@@ -9,8 +9,8 @@ site_url: https://condescending-feynman-61da7f.netlify.app/
 # This line should *not* be indented
 media_folder: "static/images" # Media files will be stored in the public folder
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI - as in, this is the label the cms editor will see
+  - label: "Blog" # Used in the UI - as in, this is the label the cms editor will see
+    name: "blog" # Used in routes, e.g., /admin/collections/blog
     folder: "blog" # The path to the folder where the documents are stored
     extension: html # determines the file extension searched for when finding existing entries in a folder collection and it determines the file extension used to save new collection items
     create: true # Allow users to create new documents in this collection
@@ -20,3 +20,13 @@ collections:
       - {label: "Post Title", name: "postTitle", widget: "string"} # https://www.netlifycms.org/docs/widgets/
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
+      - {label: 'Map', name: 'map', widget: 'map', default: '{"type":"Point","coordinates":[49.479, -117.393]}'}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Site Settings"
+        name: "settings"
+        file: "_data/settings.json"
+        fields:
+        - {label: "About", name: "about", widget: "string"}
+        - {label: "Banner", name: "banner", widget: "image", required: false }
