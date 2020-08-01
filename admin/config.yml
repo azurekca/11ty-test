@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-local_backend: true
+local_backend: true # to run local back end: npx netlify-cms-proxy-server
 
 site_url: https://condescending-feynman-61da7f.netlify.app/
 
@@ -20,7 +20,7 @@ collections:
       - {label: "Post Title", name: "postTitle", widget: "string"} # https://www.netlifycms.org/docs/widgets/
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
-      - {label: 'Map', name: 'map', widget: 'map', default: '{"type":"Point","coordinates":[49.479, -117.393]}'}
+      - {label: 'Map', name: 'map', widget: 'map', default: '{"type":"Point","coordinates":[-117.3981482,49.4833842]}'} # will default to position given when creating new content
   - label: "Pages"
     name: "pages"
     files:
