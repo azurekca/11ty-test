@@ -4,8 +4,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats([
     "html",
     "liquid",
-    "yml",
-    "jpg"
+    "yml"
   ]);
 
   // copy static assets to output folder
