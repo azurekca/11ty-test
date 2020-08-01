@@ -1,12 +1,12 @@
 module.exports = (eleventyConfig) => {
   
-  // tell 11ty what types of files we're using
-  eleventyConfig.setTemplateFormats([
-    "html",
-    "liquid",
-    "yml"
-  ]);
-
   // copy static assets to output folder
-  eleventyConfig.addPassthroughCopy("static/images");
+  eleventyConfig.addPassthroughCopy("./src/static/images");
+
+  return {
+    dir: {
+      input: "src",
+      output: "public"
+    }
+  };
 };

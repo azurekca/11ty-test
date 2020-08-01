@@ -20,7 +20,7 @@ collections:
       - {label: "Post Title", name: "postTitle", widget: "string"} # https://www.netlifycms.org/docs/widgets/
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
-      - {label: 'Map', name: 'map', widget: 'map', default: '{"type":"Point","coordinates":[-117.3981482,49.4833842]}'} # will default to position given when creating new content
+      - {label: 'Map', name: 'geometry', widget: 'map', default: '{"type":"Point","coordinates":[-117.3981482,49.4833842]}'} # will default to position given when creating new content
   - label: "Pages"
     name: "pages"
     files:
