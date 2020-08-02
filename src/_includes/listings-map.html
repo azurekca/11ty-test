@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listings Map</title>
+  <title>{{ title }}</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
@@ -13,8 +13,8 @@
 </head>
 <body>
   <header>
-    <h1>Listings Map</h1>
-    <p></p>
+    <h1>{{ title }}</h1>
+    <p>{{ myData }}</p>
     This is the header
   </header>
   <main>
@@ -33,13 +33,10 @@
     //   zoomOffset: -1,
     //   accessToken: 'pk.eyJ1IjoiYXp1cmVrY2EiLCJhIjoiY2tkYnZkZWF1MHM5cjM0anF3OTQ0ZXh4eiJ9.g8mci0gNIvygdaSwYrg3Rw'
     // }).addTo(map);
-    
-    L.marker([49.481551, -117.3815453]).addTo(map)
-      .bindPopup("Daniel");
-    
-    L.marker([49.4833842, -117.3981482]).addTo(map)
-      .bindPopup("Lego");
-    
+    {% for listing in collections.blog %}
+    L.marker([{{ listing.data.geo.coordinates[1] }}, {{ listing.data.geo.coordinates[0] }}]).addTo(map)
+      .bindPopup("{{ listing.data.title }}");
+    {% endfor %}
   </script>
  
   

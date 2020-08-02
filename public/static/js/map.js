@@ -1,3 +1,5 @@
+
+
 const map = L.map('mapid').setView([49.479076, -117.393192], 13);
 
 // L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -13,4 +15,4 @@ L.marker([49.479076, -117.393192]).addTo(map)
   .bindPopup("Agata's pretty CSS3 popup.<br> Easily customizable.")
   .openPopup();
 
-console.log(collection)
+// console.log()

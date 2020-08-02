@@ -9,14 +9,11 @@
 <body>
   <header>
     <a href="/">My Test 11ty Site!</a>
-    <a href="/characters/rick-sanchez">Rick and Morty</a>
     <img src="{{settings.banner }}" alt="site banner">
     <p>{{ settings.about }}</p>
   </header>
   <main>
-    {% if title %}<h1>{{ title }}</h1>{% endif %}
-      {{ content }}
-    {% if puppers %}<img src="{{ puppers }}" alt="random dog ceo">{% endif %}
+    {{ content | safe }}
   </main>
 </body>
 </html>
